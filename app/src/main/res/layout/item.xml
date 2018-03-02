@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:background="@android:color/holo_blue_light"
-    android:layout_marginTop="8dp">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/sample_image"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/default_profile"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15배율의 위력 [AWM + 15배율]"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="군림보 조회수 3.7만회 9시간 전"
+                android:textSize="13dp"
+                android:textColor="#6E6E6E"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height='1dp'
+        android:background="#EEEEEE"/>
 
 </LinearLayout>
